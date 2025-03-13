@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: "Home",
+  title: "Tasya",
   meta: [
     {
       name: "description",
