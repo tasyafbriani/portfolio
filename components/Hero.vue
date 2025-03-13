@@ -9,7 +9,7 @@
 </h1>
 
 <div class="text-3xl md:text-3xl text-gray-700 drop-shadow-md">
-        <h2> I'm a <span class="typewriter font-semibold drop-shadow-md">Software Engineer</span></h2>
+        <h2> I'm a <span class="typewriter font-semibold  drop-shadow-[2px_2px_4px_rgba(255,255,255,1)] drop-shadow-[4px_4px_8px_rgba(255,255,255,0.6)]">Software Engineer</span></h2>
       </div>
         </div>
 
@@ -24,6 +24,8 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 .home-img-img {
   position: relative;
   top: 3rem;
@@ -49,7 +51,7 @@
 
 .typewriter {
   color: #9333ea; 
-  font-family: monospace;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   display: inline-block;
   overflow: hidden;
@@ -90,6 +92,8 @@
 
   h2 {
     font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    
   }
 }
 </style>
