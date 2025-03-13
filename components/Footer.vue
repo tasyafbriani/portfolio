@@ -40,10 +40,10 @@
       <div class="text-center md:text-left">
         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-3">
-          <li><a href="#" class="hover:underline">About</a></li>
-          <li><a href="#" class="hover:underline">Services</a></li>
-          <li><a href="#" class="hover:underline">Projects</a></li>
-          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
       </div>
     </div>
