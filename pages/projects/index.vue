@@ -1,8 +1,8 @@
 <template>
   <section class="flex flex-col items-center justify-center p-4 md:p-8 lg:p-16 min-h-screen 
     bg-gradient-to-t from-rose-200 to-pink-100 hover:bg-gradient-to-b hover:from-pink-100 hover:to-rose-200 
-    transition-all duration-500"> 
-    <div class="mb-10 flex items-center">
+    transition-all duration-500 "> 
+    <div class="mb-10 flex items-center mt-14">
   <h1 class="text-3xl md:text-4xl font-bold text-center flex-1">
     My <span class="font-bold text-rose-900">Latest Projects</span>
   </h1>
