@@ -27,26 +27,6 @@
     :style="{ width: indicatorWidth + 'px', transform: 'translateX(' + indicatorPosition + 'px)' }">
   </div>
 </div>
-
-        <!-- <button 
-    @click="selectedSection = 'skills'" 
-    :class="['py-2 px-6 rounded-lg border border-rose-500 transition-all', 
-             selectedSection === 'skills' ? 'bg-rose-500 text-white' : 'bg-rose-300 text-rose-900 hover:bg-rose-500']">
-    Skills
-  </button>
-  <button 
-    @click="selectedSection = 'service'" 
-    :class="['py-2 px-6 rounded-lg border border-rose-500 transition-all', 
-             selectedSection === 'service' ? 'bg-rose-500 text-white' : 'bg-rose-300 text-rose-900 hover:bg-rose-500']">
-    My Service
-  </button> -->
-
-  <!-- <button 
-    @click="selectedSection = 'education'" 
-    :class="['py-2 px-6 rounded-lg border border-rose-500 transition-all', 
-             selectedSection === 'education' ? 'bg-rose-500 text-white' : 'bg-rose-300 text-rose-900 hover:bg-rose-500']">
-    Education
-  </button> -->
 </div>
 
 
@@ -104,42 +84,6 @@
       </p>
     </div>
 </div>
-
-
-<!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6" v-if="selectedSection === 'education'">
-  <div class="relative p-6 border border-rose-200 rounded-lg shadow-md text-rose-900 group overflow-hidden transition-all duration-500 transform hover:scale-105">
-    
-    <div class="absolute inset-0 bg-rose-500 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
-
-   
-    <h2 class="relative text-lg font-semibold text-rose-900 mb-2 transition-all duration-300 group-hover:text-white">
-      Software Engineer
-    </h2>
-    <p class="relative text-sm text-rose-700 transition-all duration-300 group-hover:text-white">03/2008 – 07/2011</p>
-    <p class="relative text-sm text-rose-600 transition-all duration-300 group-hover:text-white">Spotify</p>
-  </div>
-
-  <div class="relative p-6 border border-rose-200 rounded-lg shadow-md text-rose-900 group overflow-hidden transition-all duration-500 transform hover:scale-105">
-    <div class="absolute inset-0 bg-rose-500 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
-
-    <h2 class="relative text-lg font-semibold text-rose-900 mb-2 transition-all duration-300 group-hover:text-white">
-      Software Engineer
-    </h2>
-    <p class="relative text-sm text-rose-700 transition-all duration-300 group-hover:text-white">03/2008 – 07/2011</p>
-    <p class="relative text-sm text-rose-600 transition-all duration-300 group-hover:text-white">Spotify</p>
-  </div>
-
-  <div class="relative p-6 border border-rose-200 rounded-lg shadow-md text-rose-900 group overflow-hidden transition-all duration-500 transform hover:scale-105">
-    <div class="absolute inset-0 bg-rose-500 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
-
-    <h2 class="relative text-lg font-semibold text-rose-900 mb-2 transition-all duration-300 group-hover:text-white">
-      Software Engineer
-    </h2>
-    <p class="relative text-sm text-rose-700 transition-all duration-300 group-hover:text-white">03/2008 – 07/2011</p>
-    <p class="relative text-sm text-rose-600 transition-all duration-300 group-hover:text-white">Spotify</p>
-  </div>
-</div> -->
-
     </div>
   </div>
   </section>

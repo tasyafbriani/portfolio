@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: "Contact Us",
+  title: "Contact Us-tasya",
   meta: [
     {
       name: "description",
@@ -17,7 +17,7 @@ useHead({
       bg-gradient-to-br from-[#E6D5C3] via-fuchsia-400 to-rose-300 ">
       <div class="w-full max-w-2xl bg-white bg-opacity-30 p-10 rounded-lg shadow-lg 
         backdrop-blur-md border border-white/20" 
-        data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200 " >
+        data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200 mt-14  " >
         <div class=" mt-4">
               <a class="text-white font-bold flex  space-x-2 justify-start hover:text-pink-600 transition-colors duration-300" href="/">
                 <img width="20" height="20" src="https://img.icons8.com/flat-round/64/left--v1.png" alt="left--v1"/>

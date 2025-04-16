@@ -126,23 +126,13 @@
           </div>
         </div>
       </div>
-      <!-- <nuxt-link to="/" class="flex items-center bg-fuchsia-500 text-white border border-fuchsia-500 rounded-full p-1 hover:bg-transparent hover:text-fuchsia-600 transition mt-10">
-  <div class="bg-pink-300 text-white border border-fuchsia-500 rounded-full p-2 hover:bg-transparent hover:text-fuchsia-600">
-    <img width="20" height="20" src="https://img.icons8.com/flat-round/64/left--v1.png" alt="left--v1"/>
-    
-  </div>
-  <div class="px-2 py-2 ml-2">
-    Back
-
-  </div>
-</nuxt-link> -->
     </div>
   </section>
 </template>
 
 <script>
 useHead({
-  title: "Projects",
+  title: "Projects-tasya",
   meta: [
     {
       name: "description",
@@ -157,6 +147,7 @@ useHead({
     import image3 from '/assets/img/project/spw.png';
     import image5 from '/assets/img/project/quiz1.jpeg';
     import image4 from '/assets/img/project/ar.jpeg';
+    import image6 from '/assets/img/project/lpk.png';
 
 
 export default {
@@ -168,7 +159,7 @@ export default {
         {
           id: 1,
               image: image, 
-              alt: 'Pink background with web development elements',
+              alt: 'perpus',
               name: 'Pepustakaan Digital',
               category: 'Web Development',
               description: 'Library website with digital notebook to record name and purpose of visit, as well as search and borrow books.',
@@ -178,7 +169,7 @@ export default {
         {
           id: 2,
               image: image1, 
-              alt: 'Pink background with web development elements',
+              alt: 'game card',
               name: 'Game Card',
               category: 'Game',
               description: 'A mobile card game with beautiful graphics and engaging gameplay, where players match names to photos of food.',
@@ -188,7 +179,7 @@ export default {
         {
 id: 3,
               image: image2, 
-              alt: 'Pink background with web development elements',
+              alt: 'web smkn4',
               name: 'Website SMKN4',
               category: 'Web Development',
               description: 'A school website that provides comprehensive information about the school for the school community and the public.',
@@ -198,7 +189,7 @@ id: 3,
         {
           id: 4,
               image: image5, 
-              alt: 'Pink background with web development elements',
+              alt: 'quiz game',
               name: 'Game Quiz',
               category: 'Game',
               description: 'An interactive quiz game where players guess the name of an animal based on given clues.',
@@ -208,7 +199,7 @@ id: 3,
         {
           id: 5,
               image: image4, 
-              alt: 'Pink background with web development elements',
+              alt: 'game ar',
               name: 'Game Ar',
               category: 'Game',
               description: 'An AR game where dinosaurs appear when the camera detects a predetermined image, providing an interactive and fun experience.',
@@ -218,14 +209,23 @@ id: 3,
         {
 id: 6,
               image: image3, 
-              alt: 'Pink background with web development elements',
+              alt: 'spw',
               name: 'SPW Canteen',
               category: 'Web Development',
               description: 'SPW canteen website to record student transactions and display the duty schedules of teachers and students on duty in the canteen.',
           url: 'https://spw-canteen.vercel.app/',
           tech: ['Nuxt.js', 'Vue.js', 'Bootstrap','PotsgreSQL' ],  
         },
-        
+        {
+id: 7,
+              image: image6, 
+              alt: 'lpk',
+              name: 'LPK TSUKUBA',
+              category: 'Web Development',
+              description: 'LPK Tsukuba website, which contains information about training programs, language courses, and job opportunities in Japan.',
+          url: 'https://lpk-tsukuba.vercel.app/',
+          tech: ['Nuxt.js', 'Vue.js', 'PHP Laravel','Tailwind CSS' ],  
+        },
       ]
     };
   },

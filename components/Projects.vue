@@ -65,7 +65,7 @@
             {
               id: 1,
               image: image, 
-              alt: 'Pink background with web development elements',
+              alt: 'Perpus',
               name: 'Pepustakaan Digital',
               category: 'Web Development',
               description: 'Library website with digital notebook to record name and purpose of visit, as well as search and borrow books.',
@@ -74,7 +74,7 @@
             {
               id: 2,
               image: image1, 
-              alt: 'Pink background with web development elements',
+              alt: 'game ar',
               name: 'Game Card',
               category: 'Game',
               description: 'A mobile card game with beautiful graphics and engaging gameplay, where players match names to photos of food.',
@@ -82,7 +82,7 @@
             {
               id: 3,
               image: image2, 
-              alt: 'Pink background with web development elements',
+              alt: 'web smk4',
               name: 'Website SMKN4',
               category: 'Web Development',
               description: 'A school website that provides comprehensive information about the school for the school community and the public.',
