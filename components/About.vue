@@ -9,12 +9,14 @@
         </div>
         <div class="w-full md:w-1/2 md:pl-8 px-4">
           <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-rose-900 drop-shadow-md text-center md:text-left">About Me</h1>
-          <p class="mb-6 text-justify text-[#2C3E50] leading-relaxed">
-            Hii👋, my name is <span class="text-rose-800 font-semibold ">Tasya Nur Febriani Putri</span>. 
-            I am <span class="text-rose-800 font-semibold">18 years</span> old and have a high passion to develop my knowledge and skills. 
-            Currently, I am studying in the <span class="text-rose-800 font-semibold">Software and Game Development</span> department. 
-            I believe that commitment to continuous learning is the key to success in the ever-growing digital era.
-          </p>
+            <p class="mb-6 text-justify text-[#2C3E50] leading-relaxed">
+            Hii👋, my name is <span class="text-rose-800 font-semibold">Tasya Nur Febriani Putri</span>. 
+            I am <span class="text-rose-800 font-semibold">a Software Engineer</span> with an educational background in 
+            <span class="text-rose-800 font-semibold">Software Engineering and Game Development</span>. 
+            With <span class="text-rose-800 font-semibold">more than 3 years</span> of experience in developing various projects, 
+            I am used to working <span class="text-rose-800 font-semibold">collaboratively and independently</span> 
+            to create effective and innovative solutions.
+        </p>
           <div class="tabs-container relative">
             <div class="flex space-x-4 mb-4 justify-center md:justify-start">
               <button @click="setActiveTab('Hobbies')" 
