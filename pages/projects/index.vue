@@ -148,6 +148,16 @@ useHead({
     import image5 from '/assets/img/project/quiz1.jpeg';
     import image4 from '/assets/img/project/ar.jpeg';
     import image6 from '/assets/img/project/lpk.png';
+    import image7 from '/assets/img/project/asirindo.png';
+    import image8 from '/assets/img/project/koyasai.png';
+    import image9 from '/assets/img/project/jeep.png';
+    import image10 from '/assets/img/project/daily.png';
+    import image11 from '/assets/img/project/garden.png';
+
+
+
+
+
 
 
 export default {
@@ -225,6 +235,56 @@ id: 7,
               description: 'LPK Tsukuba website, which contains information about training programs, language courses, and job opportunities in Japan.',
           url: 'https://lpk-tsukuba.vercel.app/',
           tech: ['Nuxt.js', 'Vue.js', 'PHP Laravel','Tailwind CSS' ],  
+        },
+        {
+id: 8,
+              image: image7, 
+              alt: 'asirindo',
+              name: 'Asirindo',
+              category: 'Web Development',
+              description: 'The official website of Asirindo, a music licensing organization that collaborates with the ASTACODE team to provide copyright management and music distribution services.',
+          url: 'https://asirindo.org/',
+          tech: ['Nuxt.js', 'Vue.js','Tailwind CSS' ],  
+        },
+         {
+id: 9,
+              image: image8, 
+              alt: 'koyasai',
+              name: 'Koyasai',
+              category: 'Web Development',
+              description: 'Koyasai official website, a company profile created together with the ASTACODE team, provides information on fresh vegetable and fruit sales, product catalogs, and wholesale distribution services.',
+          url: 'https://koyasai.co.id/',
+          tech: ['Nuxt.js', 'Vue.js','Tailwind CSS','PHP Laravel'],  
+        },
+        {
+id: 10,
+              image: image9, 
+              alt: 'jeep',
+              name: 'Jeep Merapi',
+              category: 'Web Development',
+              description: 'Jeep app UI/UX, an online jeep booking platform designed in collaboration with the ASTACODE team to provide an easy, fast and informative user experience.',
+          url: 'https://github.com/astacode-pkl',
+          tech: ['Figma', 'UI/UX Design'],  
+        },
+        {
+id: 11,
+              image: image10, 
+              alt: 'daily',
+              name: 'Daily Activity',
+              category: 'Web Development',
+              description: 'Daily Activity Website is a web-based application designed to help users record, organize, and monitor daily activities. Equipped with activity categories and daily motivational words to increase enthusiasm and productivity.',
+          url: 'https://daily-tsya.vercel.app/',
+          tech: ['Nuxt.js', 'Vue.js','Tailwind CSS' ],
+        },
+        {
+id: 12,
+              image: image11, 
+              alt: 'garden',
+              name: 'Game Garden Grow',
+              category: 'Game',
+              description: 'Garden Grow is an environmentally themed game that invites players to plant, fertilize, and water plants while learning the importance of going green in a fun way.',
+          url: 'https://garden-grow-two.vercel.app/',
+          tech: ['Web game'],  
         },
       ]
     };
