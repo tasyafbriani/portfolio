@@ -4,8 +4,8 @@
       <div class="text-center md:text-left">
         <h2 class="text-2xl font-bold mb-2">Get to Know Me</h2>
         <p class="text-gray-200 mb-4 text-justify">
-  "Hi! 👋 <br />
-  I'm Tasya, focusing on frontend development and UI/UX design."
+  "Hello! 👋 <br />
+ I'm Tasya Nur Febriani Putri, a Frontend Developer and UI/UX designer who focuses on developing engaging user interfaces (UI) and optimal user experiences (UX).
 </p>
         
       </div>
