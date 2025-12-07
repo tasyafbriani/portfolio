@@ -21,6 +21,13 @@
                selectedSection === 'skills' ? 'text-rose-600 bg-rose-200 border-transparent' : 'text-rose-900 border-rose-400 hover:border-rose-600']">
       Skills
     </button>
+     <button 
+      ref="btnCertificates"
+      @click="setActiveTab('certificates')" 
+      :class="['font-semibold px-4 py-2 rounded-md transition-all duration-300 mb-3 border-2', 
+               selectedSection === 'certificates' ? 'text-rose-600 bg-rose-200 border-transparent' : 'text-rose-900 border-rose-400 hover:border-rose-600']">
+      certificate
+    </button>
   </div>
   <div 
     class="indicator h-1 bg-rose-800 absolute bottom-0 transition-transform duration-300 rounded-full"
@@ -84,12 +91,51 @@
       </p>
     </div>
 </div>
+
+<div v-if="selectedSection === 'certificates'" class="flex flex-col items-center">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 w-full max-w-6xl">
+    <div v-for="(certificate, index) in certificates" :key="index" 
+      class="group cursor-pointer transition-all duration-500 transform hover:scale-105">
+      
+      <div class="relative overflow-hidden rounded-2xl shadow-xl shadow-rose-500/20 
+        transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-rose-500/40">
+        
+        <img :src="certificate.image" :alt="certificate.title" 
+          class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110" />
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-rose-900/80 via-transparent to-transparent 
+          opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        
+        <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full 
+          group-hover:translate-y-0 transition-transform duration-500">
+          <h3 class="text-white font-semibold text-lg mb-1">{{ certificate.title }}</h3>
+          <p class="text-rose-200 text-sm">{{ certificate.issuer }}</p>
+          <p class="text-rose-300 text-xs mt-1">{{ certificate.year }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <nuxt-link to="/certificate" class="flex items-center bg-fuchsia-500 text-white border border-fuchsia-500 rounded-full p-1 hover:bg-transparent hover:text-fuchsia-600 transition mt-10">
+  <div class="bg-pink-300 text-white border border-fuchsia-500 rounded-full p-2 hover:bg-transparent hover:text-fuchsia-600">
+    <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/circled-right.png" alt="circled-right"/>
+  </div>
+  <div class="px-4 py-2 ml-2">
+    View All Certificates
+  </div>
+</nuxt-link>
+</div>
+
     </div>
   </div>
   </section>
 </template>
 
 <script>
+import image from '/assets/img/sertifikat/5.jpg';
+import image1 from '/assets/img/sertifikat/1.jpg';
+import image2 from '/assets/img/sertifikat/6.jpg';
+
 export default {
   name: 'HomePage',
   data() {
@@ -109,6 +155,27 @@ export default {
         { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
         { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
       ],
+
+        certificates: [
+        {
+          title: 'Belajar Dasar Manajemen Proyek',
+          issuer: 'Dicoding Indonesia',
+          year: '2025',
+          image: image, 
+        },
+        {
+          title: 'Financial Literacy 101',
+          issuer: 'Dicoding Indonesia',
+          year: '2025',
+          image: image1, 
+        },
+        {
+          title: 'Penghargaan atas kontribusi dan partisipasi dalam proyek IT',
+          issuer: 'Astacode',
+          year: '2025',
+          image: image2, 
+        }
+      ],
     };
   },
   mounted() {
@@ -125,7 +192,15 @@ export default {
     },
     updateIndicator() {
       this.$nextTick(() => {
-        const activeBtn = this.selectedSection === 'service' ? this.$refs.btnService : this.$refs.btnSkills;
+        let activeBtn;
+        if (this.selectedSection === 'service') {
+          activeBtn = this.$refs.btnService;
+        } else if (this.selectedSection === 'skills') {
+          activeBtn = this.$refs.btnSkills;
+        } else if (this.selectedSection === 'certificates') {
+          activeBtn = this.$refs.btnCertificates;
+        }
+        
         if (activeBtn) {
           this.indicatorWidth = activeBtn.offsetWidth;
           this.indicatorPosition = activeBtn.offsetLeft;
