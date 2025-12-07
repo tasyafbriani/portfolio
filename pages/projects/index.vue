@@ -153,10 +153,7 @@ useHead({
     import image9 from '/assets/img/project/jeep.png';
     import image10 from '/assets/img/project/daily.png';
     import image11 from '/assets/img/project/garden.png';
-
-
-
-
+    import image12 from '/assets/img/project/papan.png';
 
 
 
@@ -285,6 +282,16 @@ id: 12,
               description: 'Garden Grow is an environmentally themed game that invites players to plant, fertilize, and water plants while learning the importance of going green in a fun way.',
           url: 'https://garden-grow-two.vercel.app/',
           tech: ['Web game'],  
+        },
+         {
+id: 13,
+              image: image12, 
+              alt: 'papan',
+              name: 'Papan Construction',
+              category: 'Web Development',
+              description: 'This website is a CRM portal of the main ERP system of Papan Construction .',
+          url: 'https://github.com/astacode-pkl',
+          tech: ['HTML', 'Bootstrap' ],
         },
       ]
     };
